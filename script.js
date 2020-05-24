@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', function(){
      if (!e.target.matches('.equal')) display.value += e.target.value
    })
 
-   actions.addEventListener('click'), e => {})
+   actions.addEventListener('click', e => {})
  })
