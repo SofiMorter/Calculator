@@ -1,0 +1,149 @@
+.wrapper, .box{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #eeeeee;
+}
+
+.box{
+  width: 768px;
+  height: 1024px;
+  background-color: #eeeeee;
+  padding: 95px 69px;
+}
+
+
+button{
+  border: 0;
+  outline: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  background: #eeeeee;
+  box-shadow:  5px 5px 16px #d1d1d1,
+               -5px -5px 16px #ffffff;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+button:active{
+  box-shadow: inset 5px 5px 16px #d1d1d1,
+            inset -5px -5px 16px #ffffff;
+}
+
+.equal{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.equal button{
+  width: 270px;
+  border-radius: 10px;
+  background: #F2994A;
+}
+
+.equal button:active{
+  box-shadow: inset 5px 5px 16px #d58741,
+            inset -5px -5px 16px #ffab53;
+}
+
+.plus button{
+  background: #C6E6F0;
+}
+
+.plus button:active{
+  box-shadow: inset 5px 5px 16px #aecad3,
+            inset -5px -5px 16px #deffff;
+}
+
+.minus button{
+  background: #C6CAF0;
+}
+
+.minus button:active{
+  box-shadow: inset 5px 5px 16px #aeb2d3,
+            inset -5px -5px 16px #dee2ff;
+}
+
+.multiply button{
+  background: #F0C6EE;
+}
+
+.multiply button:active{
+  box-shadow: inset 5px 5px 16px #d3aed1,
+            inset -5px -5px 16px #ffdeff;
+}
+
+.divide button{
+  background: #D6F0C6;
+}
+
+.divide button:active{
+  box-shadow: inset 5px 5px 16px #bcd3ae,
+            inset -5px -5px 16px #f0ffde;;
+}
+
+.act button{
+  border-radius: 10px;
+}
+
+.buttons{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+
+}
+.numbers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 420px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.actions{
+  margin-left: 90px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.display input{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 150px;
+  width: 630px;
+  margin-bottom: 114px;
+  border-radius: 10px;
+  background: #fcfcfc;
+  box-shadow: inset 5px 5px 16px #d1d1d1,
+            inset -5px -5px 16px #ffffff;
+  border: 0;
+  outline: none;
+  text-align: right;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
